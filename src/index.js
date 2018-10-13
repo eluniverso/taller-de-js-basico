@@ -13,6 +13,19 @@ class EuNews {
         this.news.push(nota);
     }
 
+    findNews(slug){
+        
+        for (var i=0; i< this.news.length; i++) 
+        {
+            if(this.news[i].slug == slug)
+            {
+                return this.news[i];
+            }
+        }
+
+        return {};
+    }
+
 }
 
 
