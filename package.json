@@ -1,0 +1,23 @@
+{
+  "name": "taller-de-js-basico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devrchancay/taller-de-js-basico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devrchancay/taller-de-js-basico/issues"
+  },
+  "homepage": "https://github.com/devrchancay/taller-de-js-basico#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  } 
+}
