@@ -12,6 +12,18 @@ class EuNews {
     addNews(nota){
         this.news.push(nota);
     }
+    
+    removeNews(id){
+        for (var i=0; i< this.news.length; i++) 
+        {
+            if(this.news[i].id == id)
+            {
+                return this.news.splice(i);
+            }
+        }
+
+        return {};
+    }
 
     findNews(slug){
         
