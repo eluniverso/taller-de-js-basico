@@ -1,48 +1,42 @@
 /**
- * 
- *  EUNews 
+ *
+ *  EUNews
  *  lea las notas guardas
  *  Agrege las notas
  *  Elimine.
  */
 
- import EuNews from '../index'
+import EuNews from "../index";
 
+describe("Probar el correcto funcinamiento de EUNews", function() {
+  const eu = new EuNews();
 
+  const nota = {
+    id: 1,
+    slug: "deportes"
+  };
 
- describe('Probar el correcto funcinamiento de EUNews', function(){
+  it("Deberia inicializarse sin notas", function() {
+    expect(eu.getNews()).toEqual([]);
+  });
 
-    const eu = new EuNews();
+  it("Deberia agregar una nota", function() {
+    eu.addNews(nota);
+    expect(eu.getNews()).toContain(nota);
+  });
 
-    const nota = {
-        id: 1,
-        slug: 'deportes'
-    }
+  it("No deberia agregar notas repetidas", function() {
+    eu.addNews(nota);
+    expect(eu.getNews().length).toEqual(1);
+  });
 
-    it('Deberia inicializarse sin notas', function(){
-        expect(eu.getNews()).toEqual([]);
-    });
+  it("Deberia encontrar la nota por slug", function() {
+    const nota_encontrada = eu.findNews(nota.slug);
+    expect(nota_encontrada).toEqual(nota);
+  });
 
-    it('Deberia agregar una nota', function(){
-        eu.addNews(nota)
-        expect(eu.getNews()).toContain(nota);
-    });
-
-    it('No deberia agregar notas repetidas', function(){
-        eu.addNews(nota);
-        expect(eu.getNews().length).toEqual(1);
-    })
-
-    it('Deberia encontrar la nota por slug', function(){
-        const nota_encontrada = eu.findNews(nota.slug);
-        expect(nota_encontrada).toEqual(nota)
-    })
-
-    it('Deberia eliminar la nota', function(){
-        eu.removeNews(nota.id);
-        expect(eu.getNews().length).toEqual(0)
-    })
-
-
-
- })
+  it("Deberia eliminar la nota", function() {
+    eu.removeNews(nota.id);
+    expect(eu.getNews().length).toEqual(0);
+  });
+});
