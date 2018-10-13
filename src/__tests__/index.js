@@ -6,7 +6,7 @@
  *  Elimine.
  */
 
- const EuNews = require('../index');
+ import EuNews from '../index'
 
 
 
@@ -30,7 +30,7 @@
 
     it('No deberia agregar notas repetidas', function(){
         eu.addNews(nota);
-        expect(eu.getNews()).toContain(nota);
+        expect(eu.getNews().length).toEqual(1);
     })
 
     it('Deberia encontrar la nota por slug', function(){
