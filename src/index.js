@@ -1,4 +1,3 @@
-var hola = ''
 class EuNews {
 
     constructor(){
@@ -10,40 +9,28 @@ class EuNews {
     }
 
     addNews(nota){        
-        for(var i=0;i<this.news.length;i++){
-            if(this.news[i].slug == nota.slug){
-               return
-            }  
+        if(Object.keys(this.findNews(nota.slug)).length === 0){
+            this.news.push(nota);   
         }
-        this.news.push(nota);
     }
     
     removeNews(id){
-        for (var i=0; i< this.news.length; i++) 
-        {
-            if(this.news[i].id == id)
-            {
-                return this.news.splice(i);
-            }
+        const index = this.news.findIndex(item => item.id === id);
+        if(index !== -1){
+            this.news = [...this.news.slice(0, index), ...this.news.slice(index + 1)];
         }
-
-        return {};
     }
 
     findNews(slug){
-        
-        for (var i=0; i< this.news.length; i++) 
-        {
-            if(this.news[i].slug == slug)
-            {
-                return this.news[i];
-            }
+        if(this.news.some(item => item.slug === slug)){
+            return this.news.find(item => item.slug === slug);
         }
-
-        return {};
+        else{
+            return {}
+        }
     }
 
 }
 
 
-module.exports = EuNews;
+export default EuNews;
