@@ -13,6 +13,10 @@ class EuNews {
         this.news.push(nota);
     }
 
+    removeNews(nota){
+        this.news.splice('id')
+    }
+
 }
 
 
