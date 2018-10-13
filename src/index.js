@@ -9,7 +9,12 @@ class EuNews {
         return this.news;
     }
 
-    addNews(nota){
+    addNews(nota){        
+        for(var i=0;i<this.news.length;i++){
+            if(this.news[i].slug == nota.slug){
+               return
+            }  
+        }
         this.news.push(nota);
     }
 
