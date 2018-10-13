@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "precommit": "npm run test"
+    "precommit": "npm run format && npm run test",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "husky": "^1.1.2",
     "jest": "^23.6.0",
+    "prettier": "^1.14.3",
     "regenerator-runtime": "^0.12.1"
   }
 }
