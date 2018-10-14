@@ -16,7 +16,7 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
     slug: "deportes"
   };
 
-  it("Deberia inicializarse sin notas", function() {
+  it("Deberia iniciar vacío si no le pasa un parámetro", function() {
     expect(eu.getNews()).toEqual([]);
   });
 
