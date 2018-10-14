@@ -37,11 +37,12 @@ class EuNews {
       slug: '/noticias/2018/09/19/nota/6959801/arte-tejedoras-paja-toquilla-muestra-1',
       category: 'noticias'
     }]
-
+  }
+  
   count() {
     return this.news.length;
-
   }
+
 }
 
 export default EuNews;
