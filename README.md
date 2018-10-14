@@ -8,3 +8,4 @@
 - Carlos Barcos
 - Giannella Paredes
 - Felipe Mogro
+- Ramon Chancay
