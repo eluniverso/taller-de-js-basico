@@ -28,8 +28,8 @@ class EuNews {
     }
   }
 
-  count(){
-    return this.news.length
+  count() {
+    return this.news.length;
   }
 }
 
