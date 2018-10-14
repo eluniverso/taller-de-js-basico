@@ -6,3 +6,4 @@
 ## Contribuidores
 - Carolina Dávila
 - Carlos Barcos
+- Giannella Paredes
