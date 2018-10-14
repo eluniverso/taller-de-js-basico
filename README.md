@@ -7,3 +7,4 @@
 - Carolina Dávila
 - Carlos Barcos
 - Giannella Paredes
+- Felipe Mogro
