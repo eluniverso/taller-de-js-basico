@@ -40,10 +40,15 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
     expect(eu.getNews().length).toEqual(0);
   });
 
+  const notas = [{ slug: "deportes" }, { slug: "vida" }];
+  const eu2 = new EuNews(notas);
+
   it("Deberia inicializarse con una cantidad N de notas", () => {
-    const notas = [{ slug: 'deportes' }, {slug: 'vida'}];
-    const eu2 = new EuNews(notas);
     expect(eu2.getNews()).toEqual(notas);
     expect(eu2.getNews().length).toEqual(2);
-  })
+  });
+
+  it("deberia contar las notas", () => {
+    expect(eu2.getNews().length).toEqual(2); //aqui deberias incluir tu metodo;
+  });
 });
