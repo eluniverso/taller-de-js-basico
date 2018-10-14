@@ -49,6 +49,6 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
   });
 
   it("deberia contar las notas", () => {
-    expect(eu2.getNews().length).toEqual(2); //aqui deberias incluir tu metodo;
+    expect(eu2.count()).toEqual(2); //aqui deberias incluir tu metodo;
   });
 });

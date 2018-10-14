@@ -27,6 +27,10 @@ class EuNews {
       return {};
     }
   }
+
+  count(){
+    return this.news.length
+  }
 }
 
 export default EuNews;
