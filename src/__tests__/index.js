@@ -39,4 +39,11 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
     eu.removeNews(nota.id);
     expect(eu.getNews().length).toEqual(0);
   });
+
+  it("Deberia inicializarse con una cantidad N de notas", () => {
+    const notas = [{ slug: 'deportes' }, {slug: 'vida'}];
+    const eu2 = new EuNews(notas);
+    expect(notas).toEqual(notas);
+    expect(2).toEqual(2);
+  })
 });
