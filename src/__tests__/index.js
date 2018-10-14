@@ -48,7 +48,7 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
   });
 
   it("Deberia encontrar la nota por slug", function() {
-    const nota_encontrada = eu.findNews(nota.slug);
+    const nota_encontrada = eu.findNews(nota.id);
     expect(nota_encontrada).toEqual(nota);
   });
 
