@@ -71,7 +71,7 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
 
   it("Deberia filtrar las notas por [category]", () => {
     const euReal = new EuNews(notas_reales);
-    expect(euReal.filterNews('noticia')).toEqual([notas_reales[2], notas_reales[3]])
+    expect(euReal.filterNews('noticias')).toEqual([notas_reales[2], notas_reales[3]])
   });
 
   
