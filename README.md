@@ -5,3 +5,4 @@
 
 ## Contribuidores
 - Carolina Dávila
+- Carlos Barcos
