@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "precommit": "npm run format && npm run test",
+    "precommit": "npm run test",
     "format": "prettier --write 'src/**/*.js'"
   },
   "repository": {
