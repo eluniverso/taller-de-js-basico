@@ -1,6 +1,6 @@
 class EuNews {
-  constructor() {
-    this.news = [];
+  constructor(news = []) {
+      this.news = news;
   }
 
   getNews() {
