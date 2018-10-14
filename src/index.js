@@ -8,7 +8,7 @@ class EuNews {
   }
 
   addNews(nota) {
-    if (Object.keys(this.findNews(nota.slug)).length === 0) {
+    if (Object.keys(this.findNews(nota.id)).length === 0) {
       this.news.push(nota);
     }
   }
@@ -20,9 +20,9 @@ class EuNews {
     }
   }
 
-  findNews(slug) {
-    if (this.news.some(item => item.slug === slug)) {
-      return this.news.find(item => item.slug === slug);
+  findNews(id) {
+    if (this.news.some(item => item.id === id)) {
+      return this.news.find(item => item.id === id);
     } else {
       return {};
     }
