@@ -33,7 +33,7 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
     slug: "deportes"
   };
 
-  it("Deberia inicializarse sin notas", function() {
+  it("Deberia iniciar vacío si no le pasa un parámetro", function() {
     expect(eu.getNews()).toEqual([]);
   });
 
@@ -66,7 +66,7 @@ describe("Probar el correcto funcinamiento de EUNews", function() {
   });
 
   it("deberia contar las notas", () => {
-    expect(eu2.getNews().length).toEqual(2); //aqui deberias incluir tu metodo;
+    expect(eu2.count()).toEqual(2); //aqui deberias incluir tu metodo;
   });
 
   it("Deberia filtrar las notas por [category]", () => {
