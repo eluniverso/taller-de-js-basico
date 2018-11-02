@@ -7,7 +7,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "precommit": "npm run test",
+    "precommit": "npm run format && npm run test",
     "format": "prettier --write 'src/**/*.js'"
   },
   "repository": {
