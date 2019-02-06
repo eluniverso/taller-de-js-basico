@@ -52,6 +52,17 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "cpdavila",
+      "name": "Carolina Davila",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/25426782?v=4",
+      "profile": "http://davilacarolina.com",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
