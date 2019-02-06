@@ -30,6 +30,17 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "sigmasyd",
+      "name": "sigmasyd",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/314783?v=4",
+      "profile": "https://github.com/sigmasyd",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
